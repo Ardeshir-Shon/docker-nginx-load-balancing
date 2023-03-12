@@ -24,7 +24,7 @@ $ docker-compose up --build
 ## Hello Nginx
 You can test the load balancing of nginx by opening the localhost:5200 on your browser.
 
-```
+
 ### K6 Load Testing
 Script.js file is added to hit the endpoint we configured a load balancer to. You can run the following command to perform a load test:
 ```
