@@ -22,7 +22,11 @@ $ docker-compose up --build
 ```
 
 ## Hello Nginx
-You can test the load balancing of nginx by rin the below cmd.
+You can test the load balancing of nginx by opening the localhost:5200 on your browser.
+
 ```
-$ curl -i http://localhost:8888/
+### K6 Load Testing
+Script.js file is added to hit the endpoint we configured a load balancer to. You can run the following command to perform a load test:
+```
+$ k6 -u [number_of_simuntaneous_users] -d [hit_period_duration_in_seconds]s --out json=log.json script.js 
 ```
